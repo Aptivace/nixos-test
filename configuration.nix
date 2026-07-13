@@ -52,8 +52,15 @@
   ];
 
   # LOGIN MANAGER - LY
-  services.ly = {
+  services.greetd = {
     enable = true;
+    package = pkgs.greetd.tuigreet;
+    settings = {
+      default_session = {
+        command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --cmd Hyprland";
+        user = "greeter";  # это специальный пользователь greetd, НЕ bro!
+      };
+    };
   };
 
   # HYPRLAND
