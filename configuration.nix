@@ -53,7 +53,7 @@
   ];
 
   # LOGIN MANAGER - LY
-  services.displayManager.ly.enable
+  services.displayManager.ly.enable = true;
 
   # HYPRLAND
   programs.hyprland = {
@@ -100,6 +100,8 @@
   # НАСТРОЙКИ FLAKES
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   nix.settings.auto-optimise-store = true;
+
+  hardware.enableRedistributableFirmware = true;
 
   # ЧАСОВОЙ ПОЯС
   time.timeZone = "Europe/Moscow";

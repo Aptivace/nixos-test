@@ -51,8 +51,6 @@
     thunar
     gvfs           # для монтирования дисков в Thunar
 
-    # Редакторы
-    neovim
 
     # Утилиты
     tree
