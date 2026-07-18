@@ -53,20 +53,26 @@
 
     # Редакторы
     neovim
-    nano
 
     # Утилиты
     tree
     jq
+    rofi
+    waybar
 
     # Изображения
-    feh            # просмотрщик
-    grim           # скриншоты (Wayland)
+    swayimg
+    grim
+    hyprshot # скриншоты (Wayland)
     slurp          # выделение области для скриншотов
 
     # Мультимедиа
     mpv
     ffmpeg
+
+    # Шрифты
+    nerd-fonts.jetbrains-mono
+    nerd-fonts.fira-code
   ];
 
   # ХРАНЕНИЕ SECRETS (опционально)
@@ -97,5 +103,5 @@
 
 
   # ДОМАШНИЕ КАТАЛОГИ
-  home.stateVersion = "24.11";
+  home.stateVersion = "26.05";
 }
